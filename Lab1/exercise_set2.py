@@ -8,73 +8,36 @@ import matplotlib as plt
 
 # ex1
 def exercise1():
-    pass
+    listOne = [3, 6, 9, 12, 15, 18, 21]
+    listTwo = [4, 8, 12, 16, 20, 24, 28]
+
+    result = listOne[1::2] + listTwo[0::2]
+    print("Third list:", result)
 
 
 # ex2
 def exercise2():
-    pass
+    sampleList = [34, 54, 67, 89, 11, 43, 94]
+
+    element = sampleList.pop(4)
+    sampleList.insert(2, element)
+    sampleList.append(element)
+
+    print("Modified list:", sampleList)
 
 
 # ex3
 def exercise3():
-    pass
+    sampleList = [11, 45, 8, 23, 14, 12, 78, 45, 89]
+    chunk_size = len(sampleList) // 3
+
+    chunk1 = sampleList[:chunk_size][::-1]
+    chunk2 = sampleList[chunk_size:chunk_size * 2][::-1]
+    chunk3 = sampleList[chunk_size * 2:][::-1]
+
+    print("Chunks reversed:", chunk1, chunk2, chunk3)
 
 
 # ex4
 def exercise4():
-    pass
-
-
-# ex5
-def exercise5():
-    pass
-
-
-# ex6
-def exercise6():
-    pass
-
-
-# ex7
-def exercise7():
-    pass
-
-
-# ex8
-def exercise8():
-    pass
-
-
-# ex9
-def exercise9():
-    pass
-
-
-# ex10
-def exercise10():
-    pass
-
-
-if __name__ == "__main__":
-    print("EXERCISE SET 2: Data Structures")
-    print("EX1")
-    exercise1()
-    print("EX2")
-    exercise2()
-    print("EX3")
-    exercise3()
-    print("EX4")
-    exercise4()
-    print("EX5")
-    exercise5()
-    print("EX6")
-    exercise6()
-    print("EX7")
-    exercise7()
-    print("EX8")
-    exercise8()
-    print("EX9")
-    exercise9()
-    print("EX10")
-    exercise10()
+    sampleL
