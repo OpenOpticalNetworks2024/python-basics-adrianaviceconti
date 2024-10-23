@@ -9,87 +9,39 @@ import matplotlib as plt
 
 # ex1
 def exercise1():
-    pass
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter another number: "))
+    product = num1 * num2
+    if product > 1000:
+        return num1 + num2
+    else:
+        return product
 
 
 # ex2
 def exercise2():
-    pass
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("Enter another number: "))
+    previous_num = 0
+    for i in range(num1, num2 + 1):
+        current_sum = previous_num + i
+        print(f"Current number: {i}, Previous number: {previous_num}, Sum: {current_sum}")
+        previous_num = i
 
 
 # ex3
 def exercise3():
-    pass
+    num = list(map(int, input("Enter a list of numbers: ").split()))
+    return num[0] == num[-1]
 
 
 # ex4
 def exercise4():
-    pass
+    num = list(map(int, input("Enter a list of numbers: ").split()))
+    for n in num:
+        if n % 5 == 0:
+            print(f"{n} is divisible by 5")
 
 
 # ex5
-def exercise5():
-    pass
-
-
-# ex6
-def exercise6():
-    pass
-
-
-# ex7
-def exercise7():
-    pass
-
-
-# ex8
-def exercise8():
-    pass
-
-
-# ex9
-def exercise9():
-    pass
-
-
-# ex10
-def exercise10():
-    pass
-
-
-# ex11
-def exercise11():
-    pass
-
-
-# ex12
-def exercise12():
-    pass
-
-
-if __name__ == "__main__":
-    print("EXERCISE SET 1")
-    print("EX1")
-    exercise1()
-    print("EX2")
-    exercise2()
-    print("EX3")
-    exercise3()
-    print("EX4")
-    exercise4()
-    print("EX5")
-    exercise5()
-    print("EX6")
-    exercise6()
-    print("EX7")
-    exercise7()
-    print("EX8")
-    exercise8()
-    print("EX9")
-    exercise9()
-    print("EX10")
-    exercise10()
-    print("EX11")
-    exercise11()
-    print("EX12")
-    exercise12()
+def exercise
